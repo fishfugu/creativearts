@@ -1,0 +1,25 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: start;
+    margin-top: 1rem;
+}
+
+.gallery a {
+    display: block;
+    width: 180px;
+    flex-grow: 1;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
