@@ -1,0 +1,46 @@
+site_name: Creative Arts & Technologies
+site_url: https://www.creativearts.com.au
+docs_dir: content
+site_dir: docs
+theme:
+  name: material
+  palette:
+    primary: deep purple
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - toc.integrate
+    - header.autohide
+    - content.code.copy
+    - content.tabs.link
+nav:
+  - Home: index.md
+  - Music: music.md
+  - Acting:
+      - Overview: acting.md
+      - Theatre: theatre.md
+      - Film & TV: film-tv.md
+      - Filmography: filmography.md
+      - Image Gallery: gallery.md
+  - Writing: writing.md
+  - Maths: maths.md
+  - Motorola: motorola.md
+  - About: about.md
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/TheBlueEyedRavens
+    - icon: fontawesome/brands/bandcamp
+      link: https://joshshipton.bandcamp.com/
+    - icon: fontawesome/brands/spotify
+      link: https://open.spotify.com/artist/39qNx3pdBavVhs2ky0wF98
+repo_url: https://github.com/<your-username>/creativearts
+edit_uri: ""
+plugins:
+  - search
+markdown_extensions:
+  - attr_list
+  - md_in_html
+extra_css:
+  - css/extra.css
