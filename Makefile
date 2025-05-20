@@ -38,12 +38,24 @@ deploy-gh-pages:
 	@echo "Site deployed to GitHub Pages"
 	@echo "Visit https://fishfugu.github.io/creativearts to see the site"
 
-# Usage: make deploy-git MSG="Your commit message"
-deploy-git:
+# Usage: make deploy-git-update MSG="Your commit message"
+deploy-git-update:
 ifndef MSG
-	$(error Commit message not supplied. Use: make deploy-git MSG="your message")
+	$(error Commit message not supplied. Use: make deploy-git-update MSG="your message")
 endif
 	git commit -a -m "$(MSG)"
+	git push
+	git status
+	@echo "Site deployed to GitHub Pages"
+	@echo "Visit https://fishfugu.github.io/creativearts to see the site"
+
+# Usage: make deploy-git-update MSG="Your commit message"
+deploy-git-all:
+ifndef MSG
+	$(error Commit message not supplied. Use: make deploy-git-all MSG="your message")
+endif
+	git add .
+	git commit -m "$(MSG)"
 	git push
 	git status
 	@echo "Site deployed to GitHub Pages"
