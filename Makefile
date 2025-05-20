@@ -45,13 +45,7 @@ ifndef MSG
 endif
 	git commit -a -m "$(MSG)"
 	git push
-	@echo "Site deployed to GitHub Pages"
-	@echo "Visit https://fishfugu.github.io/creativearts to see the site"
-
-# commit and push to GitHub - lastest update
-deploy-git:
-	git commit -a -m "Build site into docs folder for GitHub Pages"
-	git push
+	git status
 	@echo "Site deployed to GitHub Pages"
 	@echo "Visit https://fishfugu.github.io/creativearts to see the site"
 
